@@ -1,0 +1,33 @@
+{
+  "name": "ncli-archetype",
+  "description": "ncli-archetype is a Command-Line application using Node.js.",
+  "version": "0.1.0",
+  "tags": [
+    "cli",
+    "util",
+    "tool",
+    "utility"
+  ],
+  "author": {
+    "name": "Tamás Benke",
+    "email": "tombenke@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/tombenke/ncli-archetype/issues"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/tombenke/ncli-archetype/blob/master/LICENSE"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/tombenke/ncli-archetype.git"
+  },
+  "bin": {
+    "ncli": "./bin/cli.js"
+  },
+  "main": "index",
+  "dependencies": {
+    "commander": "2.0.0"
+  }
+}
