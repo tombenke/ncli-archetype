@@ -14,7 +14,7 @@ questions:
 
         # message: (String|Function) The question to print.
         # If defined as a function, the first parameter will be the current inquirer session answers.
-        message: The name of the application:
+        message: The name of the application
 
         # default: (String|Number|Array|Function)
         # Default value(s) to use if nothing is entered,
