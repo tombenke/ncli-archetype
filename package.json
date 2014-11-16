@@ -9,19 +9,19 @@
     "utility"
   ],
   "author": {
-    "name": "Tamás Benke",
-    "email": "tombenke@gmail.com"
+    "name": "{{author_full_name}}",
+    "email": "{{author_email}}"
   },
   "bugs": {
-    "url": "https://github.com/tombenke/{{appname}}/issues"
+    "url": "https://github.com/{{author_github_account}}/{{appname}}/issues"
   },
   "license": {
     "type": "MIT",
-    "url": "https://github.com/tombenke/{{appname}}/blob/master/LICENSE"
+    "url": "https://github.com/{{author_github_account}}/{{appname}}/blob/master/LICENSE"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/tombenke/{{appname}}.git"
+    "url": "http://github.com/{{author_github_account}}/{{appname}}.git"
   },
   "bin": {
     "ncli": "./bin/cli.js"
