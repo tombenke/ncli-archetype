@@ -1,7 +1,4 @@
 # This is a configuration file for the kickoff utility
-ignore:
-    - .kickoff.yml
-
 questions:
     # A question object is a hash containing question related values:
     - 
