@@ -45,5 +45,5 @@ questions:
     -
         type: input
         name: author
-        message: The author of the application:
+        message: The author of the application
         default: tombenke
