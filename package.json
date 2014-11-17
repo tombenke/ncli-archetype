@@ -1,6 +1,6 @@
 {
   "name": "{{appname}}",
-  "description": "{{appname}} is a Command-Line application using Node.js.",
+  "description": "{{app_description}}",
   "version": "0.1.0",
   "tags": [
     "cli",
