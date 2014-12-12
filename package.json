@@ -38,5 +38,8 @@
     "gulp-through": "^0.3.0",
     "vinyl-buffer": "^1.0.0",
     "gulp-rename": "^1.2.0"
+  },
+  "scripts": {
+    "lint": "jshint **.js"
   }
-}}
+}

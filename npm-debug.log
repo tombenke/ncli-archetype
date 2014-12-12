@@ -1,0 +1,24 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'run' ]
+2 info using npm@2.1.4
+3 info using node@v0.10.17
+4 verbose stack Error: Invalid name: "{{appname}}"
+4 verbose stack     at ensureValidName (/usr/local/lib/node_modules/npm/node_modules/normalize-package-data/lib/fixer.js:322:15)
+4 verbose stack     at Object.module.exports.fixNameField (/usr/local/lib/node_modules/npm/node_modules/normalize-package-data/lib/fixer.js:211:5)
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/normalize-package-data/lib/normalize.js:30:38
+4 verbose stack     at Array.forEach (native)
+4 verbose stack     at normalize (/usr/local/lib/node_modules/npm/node_modules/normalize-package-data/lib/normalize.js:29:15)
+4 verbose stack     at final (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:342:33)
+4 verbose stack     at then (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:126:33)
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:331:40
+4 verbose stack     at evalmachine.<anonymous>:266:14
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:102:5
+5 verbose cwd /home/tombenke/topics/ncli-archetype
+6 error Linux 3.5.0-51-generic
+7 error argv "node" "/usr/local/bin/npm" "run"
+8 error node v0.10.17
+9 error npm  v2.1.4
+10 error Invalid name: "{{appname}}"
+11 error If you need help, you may report this error at:
+11 error     <http://github.com/npm/npm/issues>
+12 verbose exit [ 1, true ]
