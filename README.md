@@ -8,7 +8,7 @@ Run the install command:
 
     npm install {{appname}}
 
-Check if kickoff is properly installed:
+Check if {{appname}} is properly installed:
 
     $ {{appname}} -h
 

@@ -1,7 +1,7 @@
 {
   "name": "{{appname}}",
   "description": "{{app_description}}",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "tags": [
     "cli",
     "util",
@@ -24,7 +24,7 @@
     "url": "http://github.com/{{author_github_account}}/{{appname}}.git"
   },
   "bin": {
-    "ncli": "./bin/cli.js"
+    "{{appname}}": "./bin/cli.js"
   },
   "main": "index",
   "dependencies": {
