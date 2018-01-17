@@ -11,8 +11,5 @@
  * @function
  */
 exports.execute = (container, args) => {
-//    const context = _.merge({}, container.config, args)
-//    const projectBaseDir = path.resolve(context.sourceDir, context.projectName)
-//    container.logger.info(`Generate the "${context.projectName}" REST-API project into "${projectBaseDir}"`)
-    container.logger.info('Hello there, this is echo.execute!')
+    container.logger.info(`echo.execute => ${args.text}`)
 }
