@@ -70,4 +70,5 @@ converters:
         - docs/pageTemplate.html
         - index.html
         - package.json
+        - src/config.js
         - README.md

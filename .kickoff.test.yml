@@ -1,0 +1,7 @@
+# Configuration file to generate test-ui-ui via kickoff
+# kickoff -a test-cli.yml -f ~/topics/ncli-archetype/ -d test-cli
+package_name: test-cli
+package_description: The implementation of a CLI application
+author_full_name: Test Author
+author_email: testauthor@gmail.com
+author_github_account: testauthor
