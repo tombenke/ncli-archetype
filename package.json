@@ -15,10 +15,7 @@
   "bugs": {
     "url": "https://github.com/{{author_github_account}}/{{appname}}/issues"
   },
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/{{author_github_account}}/{{appname}}/blob/master/LICENSE"
-  },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "http://github.com/{{author_github_account}}/{{appname}}.git"
