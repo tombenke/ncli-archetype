@@ -27,7 +27,7 @@
   "dependencies": {
     "datafile": "3.2.0",
     "lodash": "4.17.4",
-    "npac": "^1.2.0",
+    "npac": "^1.3.1",
     "yargs": "10.0.3"
   },
   "devDependencies": {
