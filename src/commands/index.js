@@ -1,4 +1,4 @@
-const echo = require('./echo')
+const echo = require('./echo/')
 
 module.exports = {
     echo: echo.execute
