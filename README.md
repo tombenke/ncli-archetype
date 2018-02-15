@@ -1,4 +1,5 @@
 {{appname}}
+===========
 
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
 [![npm version][npm-badge]][npm-url]
@@ -33,9 +34,9 @@ To learn more about the tool visit the [homepage](http://{{author_github_account
 This project was generated from the [ncli-archetype](https://github.com/tombenke/ncli-archetype)
 project archetype, using the [kickoff](https://github.com/tombenke/kickoff) utility.
 
-[npm-badge]: https://badge.fury.io/js/{{project_name}}.svg
-[npm-url]: https://badge.fury.io/js/{{project_name}}
-[travis-badge]: https://api.travis-ci.org/{{github_account}}/{{project_name}}.svg
-[travis-url]: https://travis-ci.org/{{github_account}}/{{project_name}}
-[Coveralls]: https://coveralls.io/github/{{github_account}}/{{project_name}}?branch=master
-[BadgeCoveralls]: https://coveralls.io/repos/github/{{github_account}}/{{project_name}}/badge.svg?branch=master
+[npm-badge]: https://badge.fury.io/js/{{appname}}.svg
+[npm-url]: https://badge.fury.io/js/{{appname}}
+[travis-badge]: https://api.travis-ci.org/{{author_github_account}}/{{appname}}.svg
+[travis-url]: https://travis-ci.org/{{author_github_account}}/{{appname}}
+[Coveralls]: https://coveralls.io/github/{{author_github_account}}/{{appname}}?branch=master
+[BadgeCoveralls]: https://coveralls.io/repos/github/{{author_github_account}}/{{appname}}/badge.svg?branch=master

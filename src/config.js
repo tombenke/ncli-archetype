@@ -17,7 +17,7 @@ module.exports = {
         version: thisPackage.version
     },
     configFileName: 'config.yml',
-    logLevel: process.env.anonymous_LOG_LEVEL || 'info', // TODO: use allcaps built-in template func.
+    logLevel: process.env.{{#_toUpperCase}}{{appname}}{{/_toUpperCase}}_LOG_LEVEL || 'info',
     installDir: path.resolve('./')
     // Use values from environment variables if there is any needed
     // for example:

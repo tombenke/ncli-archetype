@@ -1,6 +1,6 @@
 #!/bin/bash
 testBaseDir=${HOME}/tmp
-destDir=${testBaseDir}/test-cli
+destDir=${testBaseDir}/testcli
 cwd=`pwd`
 echo Executing kickoff -a .kickoff.test.yml -f . -d destDir
 rm $destDir -rf
