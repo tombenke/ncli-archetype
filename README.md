@@ -8,7 +8,16 @@ ncli-archetype
 
 ## About
 
-This is a template CLI project
+This is a simple boilerplate CLI project
+
+It provides only one simple command, that is: `echo`, that echoes back it s only one parameter:
+
+```bash
+    ncli-archetype echo -t Hi
+```
+
+This project can be used to generate a new CLI project too,
+using the [kickoff](https://github.com/tombenke/kickoff) utility.
 
 ## Installation
 
@@ -28,11 +37,6 @@ To learn more about the tool visit the [homepage](http://tombenke.github.io/ncli
 
 - [npac](http://tombenke.github.io/npac).
 - [npac-example-cli](http://tombenke.github.io/npac-example-cli).
-
----
-
-This project was generated from the [ncli-archetype](https://github.com/tombenke/ncli-archetype)
-project archetype, using the [kickoff](https://github.com/tombenke/kickoff) utility.
 
 [npm-badge]: https://badge.fury.io/js/ncli-archetype.svg
 [npm-url]: https://badge.fury.io/js/ncli-archetype
