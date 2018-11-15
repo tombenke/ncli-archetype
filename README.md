@@ -8,7 +8,7 @@ ncli-archetype
 
 ## About
 
-This is a simple boilerplate CLI project
+Project archetype for Command Line tools using Node.js
 
 It provides only one simple command, that is: `echo`, that echoes back it s only one parameter:
 
