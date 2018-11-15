@@ -28,7 +28,7 @@ questions:
 
         # name: (String)
         # The name to use when storing the answer in the answers' hash.
-        name: appname
+        name: package_name
 
         # message: (String)
         # The question to print.
@@ -40,7 +40,7 @@ questions:
 
     -
         type: input
-        name: app_description
+        name: package_description
         message: The short description of the application
         default: Anonymous
 
@@ -64,11 +64,13 @@ questions:
 
 converters:
     mustache:
-        - docs/about.md
-        - docs/getHelp.md
-        - docs/getStarted.md
-        - docs/pageTemplate.html
-        - index.html
-        - package.json
-        - src/config.js
-        - README.md
+        - .kickoff.sed
+          
+          #        - docs/about.md
+          #        - docs/getHelp.md
+          #        - docs/getStarted.md
+          #        - docs/pageTemplate.html
+          #        - index.html
+          #        - package.json
+          #        - src/config.js
+          #        - README.md

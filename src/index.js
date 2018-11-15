@@ -28,8 +28,10 @@ export const start = (argv=process.argv, cb=null) => {
         commands,
     ]
 
+    const callCommand = (command) => command.type === 'sync' ? npac.makeCallSync(command) : npac.makeCall(command)
     // Define the jobs to execute: hand over the command got by the CLI.
-    const jobs = [npac.makeCallSync(command)]
+    const jobs = [callCommand(command)]
+
 
     //Start the container
     npac.start(adapters, jobs, cb)

@@ -17,7 +17,7 @@ module.exports = {
         version: thisPackage.version
     },
     configFileName: 'config.yml',
-    logLevel: process.env.{{#_toUpperCase}}{{appname}}{{/_toUpperCase}}_LOG_LEVEL || 'info',
+    logLevel: process.env.NCLI_ARCHETYPE_LOG_LEVEL || 'info',
     installDir: path.resolve('./')
     // Use values from environment variables if there is any needed
     // for example:

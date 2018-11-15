@@ -4,28 +4,28 @@
 
 ### Prerequisites:
 
-`{{appname}}` needs [Node.js](http://nodejs.org/) and [NPM](https://npmjs.org/) installed on the machine, before start installing and using it.
+`ncli-archetype` needs [Node.js](http://nodejs.org/) and [NPM](https://npmjs.org/) installed on the machine, before start installing and using it.
 
 ### Installation steps
 
-The `{{appname}}` tool can be installed as any other node module, but you have to install to the global node_modules folder, so use the `-g` switch to `npm`.
+The `ncli-archetype` tool can be installed as any other node module, but you have to install to the global node_modules folder, so use the `-g` switch to `npm`.
 
-To install `{{appname}}`, execute the following command:
+To install `ncli-archetype`, execute the following command:
 
-    $ npm install -g {{appname}}
+    $ npm install -g ncli-archetype
 
-To check, whether {{appname}} is installed successfully, run the following command:
+To check, whether ncli-archetype is installed successfully, run the following command:
 
-    $ {{appname}} -V
+    $ ncli-archetype -V
 
 
-## Usage of the `{{appname}}` utility
+## Usage of the `ncli-archetype` utility
 
-Check if {{appname}} is properly installed:
+Check if ncli-archetype is properly installed:
 
-    $ {{appname}} -h
+    $ ncli-archetype -h
 
-      Usage: {{appname}} [options]
+      Usage: ncli-archetype [options]
 
       Options:
 

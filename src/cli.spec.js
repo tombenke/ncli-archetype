@@ -18,6 +18,7 @@ describe('cli', () => {
         const expected = {
             command: {
                 name: 'echo',
+                type: 'sync',
                 args: { text: textToEcho }
             },
             cliConfig: {

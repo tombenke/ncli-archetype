@@ -1,8 +1,8 @@
 ## About
 
-{{app_description}}
+This is a template CLI project
 
-You can do the following things with `{{appname}}`:
+You can do the following things with `ncli-archetype`:
 
 - Feature-1
 - Feature-2

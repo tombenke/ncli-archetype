@@ -1,6 +1,6 @@
 {
-  "name": "{{appname}}",
-  "description": "{{app_description}}",
+  "name": "ncli-archetype",
+  "description": "This is a template CLI project",
   "version": "1.0.0",
   "keywords": [
     "cli",
@@ -9,19 +9,19 @@
     "utility"
   ],
   "author": {
-    "name": "{{author_full_name}}",
-    "email": "{{author_email}}"
+    "name": "Tamás Benke",
+    "email": "tombenke@gmail.com"
   },
   "bugs": {
-    "url": "https://github.com/{{author_github_account}}/{{appname}}/issues"
+    "url": "https://github.com/tombenke/ncli-archetype/issues"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "http://github.com/{{author_github_account}}/{{appname}}.git"
+    "url": "http://github.com/tombenke/ncli-archetype.git"
   },
   "bin": {
-    "{{appname}}": "./dist/app.js"
+    "ncli-archetype": "./dist/app.js"
   },
   "main": "index",
   "dependencies": {

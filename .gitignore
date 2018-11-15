@@ -1,6 +1,7 @@
 tmp
 coverage
 node_modules
+dist
 examples/private
 examples/*/node_modules
 examples/*/*/node_modules
