@@ -22,7 +22,7 @@ const parse = (defaults, processArgv=process.argv) => {
                     alias: "t",
                     desc: "A text parameter",
                     type: 'string',
-                    default: defaults.docsTemplates
+                    default: ""
                 })
                 .demandOption([]),
             argv => {

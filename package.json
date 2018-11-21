@@ -1,7 +1,7 @@
 {
   "name": "ncli-archetype",
   "description": "Project archetype for Command Line tools using Node.js",
-  "version": "1.0.1",
+  "version": "3.0.0",
   "keywords": [
     "cli",
     "util",
@@ -66,6 +66,7 @@
     "build": "babel src --presets babel-preset-es2015 --out-dir dist",
     "lint": "eslint src/**.js",
     "test": "cross-env NODE_ENV=test mocha --recursive --compilers js:babel-register 'src/**/*.spec.js'",
+    "test-single": "cross-env NODE_ENV=test mocha --recursive --compilers js:babel-register $1",
     "test:watch": "npm test -- --watch",
     "coverage": "NODE_ENV=test istanbul cover _mocha -- recursive --compilers js:babel-register --timeout 15000 'src/**/*.spec.js'",
     "coveralls": "NODE_ENV=test istanbul cover _mocha --report lcovonly -- recursive --compilers js:babel-register --timeout 15000 'src/**/*.spec.js' -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
