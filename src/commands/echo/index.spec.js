@@ -16,7 +16,6 @@ import {
 */
 
 describe('commands/echo', () => {
-
     /*
     const testDirectory = path.resolve('./tmp')
     const destCleanup = function(cb) {
@@ -39,19 +38,21 @@ describe('commands/echo', () => {
     */
 
     const echoContainer = {
-        config: _.merge({}, defaults, { /* Add command specific config parameters */ })
+        config: _.merge({}, defaults, {
+            /* Add command specific config parameters */
+        })
     }
-    const textToEcho = "Hello World!"
+    const textToEcho = 'Hello World!'
     const echoCommand = {
         name: 'echo',
         args: { text: textToEcho }
     }
 
-    it('echo - execute', (done) => {
+    it('echo - execute', done => {
         const executives = { echo: echo.execute }
 
         npac.runJob(echoContainer.config, executives, echoCommand, (err, res) => {
-        //npac.runJobSync(echoContainer.config, executives, echoCommand, (err, res) => {
+            //npac.runJobSync(echoContainer.config, executives, echoCommand, (err, res) => {
             expect(err).to.equal(null)
             done()
         })

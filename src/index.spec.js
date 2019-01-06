@@ -19,7 +19,6 @@ const destCleanup = function(cb) {
 }
 
 describe('app', () => {
-
     before(function(done) {
         destCleanup(function() {
             fs.mkdirSync(testDirectory)
@@ -31,7 +30,7 @@ describe('app', () => {
         destCleanup(done)
     })
 
-/*
+    /*
     it('#start - with no arguments', (done) => {
 
         const processArgvEmpty = [
@@ -46,13 +45,8 @@ describe('app', () => {
         }
     })
 */
-    it('#start - echo command', (done) => {
-
-        const processArgvToEcho = [
-            'node', 'src/index.js',
-            'echo',
-            '--text', 'Hello world!'
-        ]
+    it('#start - echo command', done => {
+        const processArgvToEcho = ['node', 'src/index.js', 'echo', '--text', 'Hello world!']
 
         start(processArgvToEcho, (err, res) => {
             expect(err).to.equal(null)

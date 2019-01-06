@@ -1,30 +1,31 @@
 #!/usr/bin/env node
 /*jshint node: true */
-'use strict';
+'use strict'
 
 const yargs = require('yargs')
 
-const parse = (defaults, processArgv=process.argv) => {
-
-   
+const parse = (defaults, processArgv = process.argv) => {
     let results = {}
 
     yargs(processArgv.slice(2))
-//        .exitProcess(false)
-        .command('echo', 'Echo arguments', yargs =>
-            yargs
-                .option("config", {
-                    alias: "c",
-                    desc: "The name of the configuration file",
-                    default: defaults.configFileName
-                })
-                .option("text", {
-                    alias: "t",
-                    desc: "A text parameter",
-                    type: 'string',
-                    default: ""
-                })
-                .demandOption([]),
+        //        .exitProcess(false)
+        .command(
+            'echo',
+            'Echo arguments',
+            yargs =>
+                yargs
+                    .option('config', {
+                        alias: 'c',
+                        desc: 'The name of the configuration file',
+                        default: defaults.configFileName
+                    })
+                    .option('text', {
+                        alias: 't',
+                        desc: 'A text parameter',
+                        type: 'string',
+                        default: ''
+                    })
+                    .demandOption([]),
             argv => {
                 results = {
                     command: {
@@ -32,7 +33,7 @@ const parse = (defaults, processArgv=process.argv) => {
                         type: 'async', // sync | async
                         args: {
                             text: argv.text
-                        },
+                        }
                     },
                     cliConfig: {
                         configFileName: argv.config
@@ -41,7 +42,7 @@ const parse = (defaults, processArgv=process.argv) => {
             }
         )
 
-        .demandCommand(1, "Must use a command!")
+        .demandCommand(1, 'Must use a command!')
         .showHelpOnFail(false, 'Specify --help for available options')
         .help()
         .parse()
