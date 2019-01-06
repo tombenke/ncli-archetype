@@ -10,7 +10,7 @@
  *
  * @function
  */
-exports.execute = (container, args/*, endCb*/) => {
+exports.execute = (container, args, endCb) => {
     container.logger.info(`echo.execute => ${args.text}`)
-//    endCb(null, null)
+    endCb(null, null)
 }

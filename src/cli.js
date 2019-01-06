@@ -29,7 +29,7 @@ const parse = (defaults, processArgv=process.argv) => {
                 results = {
                     command: {
                         name: 'echo',
-                        type: 'sync', // sync | async
+                        type: 'async', // sync | async
                         args: {
                             text: argv.text
                         },

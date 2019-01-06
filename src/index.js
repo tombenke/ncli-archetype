@@ -25,14 +25,24 @@ export const start = (argv=process.argv, cb=null) => {
     const adapters = [
         npac.mergeConfig(config),
         npac.addLogger,
-        commands,
+        commands
     ]
+
+    // Define the terminators
+    const terminators = []
 
     const callCommand = (command) => command.type === 'sync' ? npac.makeCallSync(command) : npac.makeCall(command)
     // Define the jobs to execute: hand over the command got by the CLI.
     const jobs = [callCommand(command)]
+    console.log(jobs)
 
+    const endCb = cb !== null ? cb : (err, res) => {
+        if (command.type === 'async') {
+            console.log('npac jobs successfully finished')
+            process.kill(process.pid, 'SIGTERM')
+        }
+    }
 
     //Start the container
-    npac.start(adapters, jobs, [], cb)
+    npac.start(adapters, jobs, terminators, endCb)
 }

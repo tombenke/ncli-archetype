@@ -50,7 +50,8 @@ describe('commands/echo', () => {
     it('echo - execute', (done) => {
         const executives = { echo: echo.execute }
 
-        npac.runJobSync(echoContainer.config, executives, echoCommand, (err, res) => {
+        npac.runJob(echoContainer.config, executives, echoCommand, (err, res) => {
+        //npac.runJobSync(echoContainer.config, executives, echoCommand, (err, res) => {
             expect(err).to.equal(null)
             done()
         })
