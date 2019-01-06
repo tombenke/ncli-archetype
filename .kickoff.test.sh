@@ -8,7 +8,7 @@ kickoff -a .kickoff.test.yml -f . -d $destDir
 cd $destDir
 sh ./.kickoff.sh
 npm install
-#npm run build
-#npm run test
-#npm run lint
+npm run build
+npm run lint
+npm run test
 cd $cwd
