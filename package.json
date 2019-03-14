@@ -1,6 +1,6 @@
 {
   "name": "ncli-archetype",
-  "description": "Project archetype for Command Line tools using Node.js",
+  "description": "This is a template CLI project",
   "version": "3.1.3",
   "keywords": [
     "cli",
