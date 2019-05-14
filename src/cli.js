@@ -25,6 +25,18 @@ const parse = (defaults, processArgv = process.argv) => {
                         type: 'string',
                         default: ''
                     })
+                    .option('logLevel', {
+                        alias: 'l',
+                        desc: 'The log level',
+                        type: 'string',
+                        default: defaults.logger.level
+                    })
+                    .option('logFormat', {
+                        alias: 't',
+                        desc: 'The log (`plainText` or `json`)',
+                        type: 'string',
+                        default: defaults.logger.transports.console.format
+                    })
                     .demandOption([]),
             argv => {
                 results = {
@@ -36,7 +48,15 @@ const parse = (defaults, processArgv = process.argv) => {
                         }
                     },
                     cliConfig: {
-                        configFileName: argv.config
+                        configFileName: argv.config,
+                        logger: {
+                            level: argv.logLevel,
+                            transports: {
+                                console: {
+                                    format: argv.logFormat
+                                }
+                            }
+                        }
                     }
                 }
             }

@@ -21,7 +21,15 @@ describe('cli', () => {
                 args: { text: textToEcho }
             },
             cliConfig: {
-                configFileName: 'config.yml'
+                configFileName: 'config.yml',
+                logger: {
+                    level: 'info',
+                    transports: {
+                        console: {
+                            format: 'Hello World!'
+                        }
+                    }
+                }
             }
         }
 
