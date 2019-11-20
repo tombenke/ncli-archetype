@@ -2,7 +2,8 @@
 /*jshint node: true */
 'use strict'
 
-import defaults from './config'
+import _ from 'lodash'
+import config from './config'
 import cli from './cli'
 import commands from './commands/'
 import npac from 'npac'
@@ -15,13 +16,14 @@ const dumpCtx = (ctx, next) => {
 */
 
 export const start = (argv = process.argv, cb = null) => {
+    const defaults = _.merge({}, config /*, add <adapter>.defaults here */)
     // Use CLI to gain additional parameters, and command to execute
     const { cliConfig, command } = cli.parse(defaults, argv)
     // Create the final configuration parameter set
-    const config = npac.makeConfig(defaults, cliConfig, 'configFileName')
+    const appConfig = npac.makeConfig(defaults, cliConfig, 'configFileName')
 
     // Define the adapters and executives to add to the container
-    const adapters = [npac.mergeConfig(config), npac.addLogger, commands]
+    const adapters = [npac.mergeConfig(appConfig), npac.addLogger, commands]
 
     // Define the terminators
     const terminators = []
