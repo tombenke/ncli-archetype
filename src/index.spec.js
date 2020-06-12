@@ -13,20 +13,20 @@ import { start } from './index'
 
 const testDirectory = path.resolve('./tmp')
 
-const destCleanup = function(cb) {
+const destCleanup = function (cb) {
     const dest = testDirectory
     rimraf(dest, cb)
 }
 
 describe('app', () => {
-    before(function(done) {
-        destCleanup(function() {
+    before(function (done) {
+        destCleanup(function () {
             fs.mkdirSync(testDirectory)
             done()
         })
     })
 
-    after(function(done) {
+    after(function (done) {
         destCleanup(done)
     })
 
@@ -45,7 +45,7 @@ describe('app', () => {
         }
     })
 */
-    it('#start - echo command', done => {
+    it('#start - echo command', (done) => {
         const processArgvToEcho = ['node', 'src/index.js', 'echo', '--text', 'Hello world!']
 
         start(processArgvToEcho, (err, res) => {

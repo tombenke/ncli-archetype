@@ -28,7 +28,7 @@ export const start = (argv = process.argv, cb = null) => {
     // Define the terminators
     const terminators = []
 
-    const callCommand = command => (command.type === 'sync' ? npac.makeCallSync(command) : npac.makeCall(command))
+    const callCommand = (command) => (command.type === 'sync' ? npac.makeCallSync(command) : npac.makeCall(command))
     // Define the jobs to execute: hand over the command got by the CLI.
     const jobs = [callCommand(command)]
     console.log(jobs)

@@ -2,16 +2,16 @@ import { expect } from 'chai'
 import defaults from './config'
 import cli from './cli'
 
-before(done => {
+before((done) => {
     done()
 })
 
-after(done => {
+after((done) => {
     done()
 })
 
 describe('cli', () => {
-    it('echo', done => {
+    it('echo', (done) => {
         const textToEcho = 'Hello World!'
         const processArgv = ['node', 'src/index.js', 'echo', '-t', textToEcho]
         const expected = {

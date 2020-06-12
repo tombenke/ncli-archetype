@@ -48,7 +48,7 @@ describe('commands/echo', () => {
         args: { text: textToEcho }
     }
 
-    it('echo - execute', done => {
+    it('echo - execute', (done) => {
         const executives = { echo: echo.execute }
 
         npac.runJob(echoContainer.config, executives, echoCommand, (err, res) => {
